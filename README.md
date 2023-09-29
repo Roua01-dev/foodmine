@@ -73,7 +73,8 @@
         3. Cart Page
 /////////////////////////////
 za8ret tw backend :3
-10. Connet To Backend
+(run lel backend b npm start)
+11. Connet To Backend
     1. Create backend folder
     2. npm init(npm init -y)ya3mli fichier package.json f wost dossier backend
     3. npm install typescript (npm install typescript)
@@ -84,7 +85,37 @@ za8ret tw backend :3
     8. Create server.ts
         1. install @types
         2. add Apis
-    9. npm install nodemon ts-node --save-dev
+    9. npm install nodemon ts-node --save-dev/npm install nodemon --save-dev
+    (utilite de nodemon:Nodemon est un utilitaire de ligne de commande pour Node.js qui permet de surveiller les modifications de fichiers dans une application Node.js et de redémarrer automatiquement le serveur chaque fois que des modifications sont détectées.
+    Cela peut vous faire gagner beaucoup de temps et vous permettre de vous concentrer sur le développement de votre application plutôt que sur la gestion du serveur.)
+
+    ("ts-node" est un package Node.js qui permet d'exécuter des fichiers TypeScript directement dans Node.js, sans avoir besoin de les compiler en JavaScript au préalable.)
     10. Add urs.ts to frontend
     11. Add HttpClient module
     12. Update food service
+12. Login Page
+    1. Generate Component 
+        1. Add to routes
+        2. Add ts
+        3. Add html 
+            1. Import Reactive Forms Module
+        4. Add css
+    2. Add Login Api 
+        1. Use Json
+        2. Add jsonwebtoken
+        3. Test Using Postman
+    3. Generate User Service
+        1. Generate User model
+        2. Add User Subject 
+        3. Add Login Method
+            1. Add User Urls
+            2. Generate IUser Login interface
+            3. Add ngx-toastr
+                1. Import Module 
+                2. Import BrowserAnimationModule
+                3. Add styles in angular.json
+            4. Add to header
+        1. Add Local Storage methods 
+        2. Add Logout Method
+            1. Add to header
+
