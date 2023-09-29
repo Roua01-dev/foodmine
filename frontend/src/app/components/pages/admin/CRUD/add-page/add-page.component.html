@@ -1,0 +1,91 @@
+<section class="h-100 h-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-8 col-xl-6">
+        <div class="card rounded-3">
+          <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Add New</h3>
+
+          <img src="/assets/menu1.jpg"
+            class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+            alt="Sample photo">
+
+
+          <div class="card-body p-4 p-md-5">
+
+            <form class="px-md-2 form-inline" (ngSubmit)="submit()">
+
+              <text-input
+              [control]="fc.name"
+              [showErrorsWhen]="isSubmitted"
+              type="text"
+              label="Name">
+            </text-input>
+
+            <text-input
+            [control]="fc.price"
+            [showErrorsWhen]="isSubmitted"
+            type="text"
+
+            label="Price">
+          </text-input>
+
+              <div class="form-outline mb-4 col-md-6">
+                <select class="custom-select" >
+                  <option value="1">Tags</option>
+                  <option value="2">spicy</option>
+                  <option value="3">italian</option>
+                  <option value="4">pasta</option>
+                </select>
+              </div>
+              <text-input
+              [control]="fc.favorite"
+              [showErrorsWhen]="isSubmitted"
+              type="text"
+
+              label="Favorite">
+            </text-input>
+
+            <text-input
+            [control]="fc.stars"
+            [showErrorsWhen]="isSubmitted"
+            type="text"
+
+            label="Stars">
+          </text-input>
+
+              <text-input
+            [control]="fc.origins"
+            [showErrorsWhen]="isSubmitted"
+            type="text"
+            label="Origins">
+          </text-input>
+
+          <text-input
+          [control]="fc.cookTime"
+          [showErrorsWhen]="isSubmitted"
+          type="text"
+          label="CookTime">
+        </text-input>
+
+              <div class="col-md-12 mt-3">
+                <h6 class="mb-0">Upload Image</h6>
+              </div>
+
+              <div class="form-outline mb-4 col-md-12">
+                <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                <div class="small text-muted mt-2">Upload your Image or any other relevant file. Max file
+                  size 50 MB</div>
+              </div>
+
+              <div class="col-md-12 mt-3">
+                <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

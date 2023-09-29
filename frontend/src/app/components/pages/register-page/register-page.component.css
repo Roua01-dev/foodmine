@@ -1,0 +1,57 @@
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 100%;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  width: 25rem;
+}
+
+.details app-title {
+  font-size: 24px;
+  color: #e72929;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-input {
+  margin-bottom: 10px;
+}
+
+.login {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login a {
+  color: #e72929;
+  text-decoration: none;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+.default-button {
+  background-color: #e72929;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.default-button:hover {
+  background-color: #b71c1c;
+}

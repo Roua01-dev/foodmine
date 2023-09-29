@@ -119,3 +119,79 @@ za8ret tw backend :3
         2. Add Logout Method
             1. Add to header
 
+13. Make components for Login page
+    1. Input Container 
+    2. Input Validation
+    3. Text Input
+    4. Default Button
+
+14. Connect Login API To MongoDB Atlas
+    1. Moving Api into routers
+    2. Create MongoDB Atlas
+    3. Create .env file
+    4. Install
+        1. mongoose
+        2. dotenv
+        3. bcryptjs
+        4. jsonwebtoken
+        5. express-async-handler
+        (npm install mongoose dotenv bcryptjs express-async-handler)
+    5. Connect to MongoDB Atlas
+    6. Use MongoDB instead of data.ts in apis
+15. Register User 
+    1. Add Register api
+    2. Add Register service method
+    3. Add Register link
+    4. Add Register Component
+16. Loading!
+    1. Add Image
+    2. Add Component
+    3. Add Service 
+    4. Add Interceptor
+
+17. Checkout Page
+    1. Create Order Model
+    2. Create Checkout Page Component
+        1. Add To Router
+    3. Add User to User Service
+    4. Add Cart to Cart Service 
+    5. Create Order Items List Component
+    6. Adding Map to the checkout page
+        1. Add Leaflet npm package
+            1. Add @types/leafleft
+            2. Add css to angular0json
+        2. Add AddressLatLng to Order Model
+        3. Create Map component
+            1. Add to checkout page
+            2. Add TS
+                1. change app-mao selector to map
+             3. add to html
+             4. add css
+         4. add auth Guard
+    7. save Order
+        1. Add Order Model
+        2. Add Order Status Enum
+        3. Add Auth Middleware
+        4. Add Order Router
+            1. Add create API
+        5. Add Order Urls to urls.ts
+        6. Add Order Service
+            1. Add carte Method
+        8. Add Auth Interceptor
+
+
+18. Payment page 
+    1. Generate component
+    2. add 'getOrderForCurrentUser' api
+    3. Add Order Service method
+    4. Connect Component to service
+    5. Make the map Component readonly
+
+
+19. Adding Paypal
+    1. Generate Component
+        1. Add to payment page
+    2. Get paypal client Id
+    3. Add Paypal client Id
+    4. set up paypal button 
+    5. Add pay 

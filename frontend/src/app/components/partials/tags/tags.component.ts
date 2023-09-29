@@ -13,7 +13,7 @@ export class TagsComponent implements OnInit  {
   constructor(foodService:FoodService){
     foodService.getAllTags().subscribe(serverTags=>{
       this.tags=serverTags;
-    })
+    });
 
   }
 

@@ -1,0 +1,50 @@
+.container {
+  margin-top: 1.rem;
+  display: flex;
+  margin: 0 2rem 6rem 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content {
+  margin-right: 3px;
+  width: 35rem;
+}
+.content,form {
+display: flex;
+flex-direction: column;
+}
+
+form {
+  width: 100%;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+}
+
+.buttons {
+  margin: 2rem;
+  width: 35rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  background-color: #e72929;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 1.3rem;
+  border: none;
+box-shadow: 2px 2px 2px 2px grey;
+  height: 3rem;
+}
+
+button:hover {
+opacity: 1;
+cursor: pointer;}

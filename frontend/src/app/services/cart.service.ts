@@ -73,6 +73,7 @@ clearCart(){
   this.cart=new Cart();
   this.setCartToLocalStorage();
 
+
 }
 
 getCartObservable():Observable<Cart>{
@@ -84,6 +85,10 @@ getCartObservable():Observable<Cart>{
   return this.cartSubject.asObservable();
 }
 
+
+getCart():Cart{
+return this.cartSubject.value;
+}
 private setCartToLocalStorage():void{
   /** met à jour le prix total du panier,
    *  stocke l'objet cart mis à jour dans

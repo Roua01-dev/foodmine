@@ -18,11 +18,10 @@ form {
 
 input[type="email"],
 input[type="password"] {
-  width: 100%;
   border: 1px solid #ced4da;
-  border-radius: 3px;
+  border-radius: px;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 0.5px;
   font-size: 1rem;
 }
 
@@ -61,4 +60,20 @@ button[type="submit"]:hover {
 .error-list div {
   margin-top: 5px;
   font-size: 0.9rem;
+}
+
+.register {
+  margin-top: 10px;
+  font-size: 14px;
+display: flex;
+justify-content: center;
+align-items: center;  }
+
+.register a {
+  color: #e72929;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
 }

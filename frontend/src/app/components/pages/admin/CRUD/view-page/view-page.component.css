@@ -1,0 +1,56 @@
+/* Style for circular and small images */
+.table img {
+  border-radius: 50%;
+  width:3rem; /* Adjust the size as needed */
+  height: 3rem; /* Adjust the size as needed */
+}
+/* CSS for button styling */
+.btn {
+  padding: 8px 16px; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* Text color */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Hover color */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Danger button color */
+  color: #fff; /* Text color */
+}
+
+.btn-danger:hover {
+  background-color: #bb2d3b; /* Hover color */
+}
+/* CSS to make the "Actions" column wider */
+/* CSS pour styliser le bouton "Add" */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header .btn-add {
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.card-header .btn-add:hover {
+  background-color: #007bff; /* Couleur de survol */
+  color: #fff; /* Couleur du texte en survol */
+}
+
+/* CSS pour styliser le titre "All Food" */
+.card-header h6 {
+  margin: 0; /* Supprime la marge par défaut */
+  font-size: 18px; /* Taille de la police */
+  font-weight: bold;
+  color: #333; /* Couleur du texte */
+}
+
+

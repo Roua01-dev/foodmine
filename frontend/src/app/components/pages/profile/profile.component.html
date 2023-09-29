@@ -1,0 +1,77 @@
+
+   <div class="container">
+
+
+
+        <div class="cadre1">
+          <div>
+              <img src="assets/admin/img/roua.jpg" alt="User Photo" class="d-block ui-w-80">
+              <div class="cadre2"> <!-- Augmentation de la marge ici -->
+                  <label class="btn btn-outline-primary">
+                      Upload New Photo
+                      <input type="file" class="account-settings-fileinput">
+                  </label>
+              </div>
+          </div>
+      </div>
+
+                          <form  [formGroup]="profilForm"  >
+                                <text-input
+                                type="text"
+                                [control]="fc.name"
+                                label="Name"></text-input>
+
+                                <text-input
+                                [control]="fc.email"
+                                label="Email"
+                                type="email"
+                                ></text-input>
+
+
+
+
+
+                                <text-input
+                                [control]="fc.address"
+                                type="text"
+
+                                label="Address" >
+                              </text-input>
+
+
+                           <div class="button">
+
+                             <default-button text="Save changes"></default-button>
+                             <default-button text="Cancel"></default-button>
+                            </div>
+
+
+                        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

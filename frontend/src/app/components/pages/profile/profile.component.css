@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Hauteur de la fenêtre */
+  text-align: center;
+margin-top: 3rem;
+  border-radius: 10px;
+}
+
+.card-body {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  width: 80%; /* Ajustez la largeur du cadre selon vos besoins */
+  max-width: 500px; /* Largeur maximale du cadre */
+  text-align: left;
+}
+
+img {
+  width: 150px; /* Ajustez la taille de la photo selon vos besoins */
+  height: auto; /* Garantit que l'image conserve son ratio d'aspect */
+  border: 1px solid #ccc;
+  border-radius: 6rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Pour centrer les boutons */
+.default-button {
+  margin: 0 10px;
+}
+
+/* Pour aligner les étiquettes à gauche */
+label {
+  text-align: left;
+}
+.cadre1 {
+  border: 0px solid #ccc; /* Ajoutez une bordure au cadre1 */
+  padding: 1rem; /* Ajoutez de la marge intérieure autour de cadre1 */
+
+}
+
+.cadre2 {
+  margin: 10px; /* Ajoutez de la marge autour de cadre2 pour le décaler de cadre1 */
+}
+
+
+

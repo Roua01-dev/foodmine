@@ -1,0 +1,65 @@
+ <!-- Page Heading -->
+ <div class="container-fluid">
+
+ <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+
+
+ <!-- DataTales Example -->
+ <div class="card shadow mb-4">
+
+
+
+      <li class="nav-item">
+        <a class="nav-link float-right" routerLink="/admin/add">
+          <i class="fas fa-plus" ></i>
+            <span>Add</span></a>
+            <router-outlet></router-outlet>
+    </li>
+      <router-outlet></router-outlet>
+
+<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Favorite</th>
+          <th>Stars</th>
+          <th>Origins</th>
+          <th>Cook Time</th>
+          <th>Price</th>
+          <th>Image</th>
+          <th  class="wider-column">Actions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th> <!-- Colonne pour les boutons d'action -->
+      </tr>
+  </thead>
+
+  <!-- ... Vos autres sections de la table ... -->
+
+  <tbody>
+      <tr *ngFor="let food of foods">
+          <td>{{food.name}}</td>
+          <td>{{food.favorite ? 'Yes' : 'No'}}</td>
+          <td>
+              <star-rating [value]="food.stars" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="22px"
+                  [readonly]="true">
+              </star-rating>
+          </td>
+          <td>
+              <span *ngFor="let origin of food.origins">
+                  {{origin}}
+              </span>
+          </td>
+          <td>{{food.cookTime}}</td>
+          <td>{{food.price | currency}}</td>
+          <td><img [src]="'/' + food.imageUrl" [alt]="food.name" /></td>
+          <!-- HTML for buttons with Font Awesome icons -->
+<td>
+    <button  class = "btn btn-primary" > <i class="fas fa-edit"></i>Update</button>
+    <button class = "btn btn-danger" style="margin-left: 10px">  <i class="fas fa-trash"></i>Delete</button>
+      <a routerLink="/food/{{food.id}}">
+      Details</a>
+</td>
+
+
+      </tr>
+  </tbody>
+</table>
+</div>

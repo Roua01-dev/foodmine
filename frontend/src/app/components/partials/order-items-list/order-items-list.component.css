@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #eeeeee;
+  margin-top: 1rem;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+td {
+  border: none;
+  height: 3rem;
+}
+a:hover{
+opacity: 0.9;}
+
+h3 {
+  margin-top: 0.5rem;
+  margin-left: 0.3rem;
+  color: grey;
+}
+
+td img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 100rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+

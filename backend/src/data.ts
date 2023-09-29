@@ -66,6 +66,17 @@ export const sample_foods:any[]=[
     origins: ["Thailand"],
     cookTime: ["30 mins", "wok"]
   },
+  {
+    id: "7",
+    name: "Pad Thai",
+    price: 11.99,
+    tags: ["Thai", "spicy", "noodles"],
+    favorite: false,
+    stars: 4,
+    imageUrl: 'assets/foodexpress.jpg',
+    origins: ["Thailand"],
+    cookTime: ["30 mins", "wok"]
+  },
 ]
 
 export const sample_tags:any[]=[
